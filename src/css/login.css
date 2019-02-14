@@ -1,0 +1,128 @@
+@charset "UTF-8";
+#main .wrap .main_reg .reg_br, #foot .wrap .foot_br {
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+body {
+  color: #666;
+  font-size: 12px;
+}
+
+a {
+  color: #999;
+}
+
+#head {
+  width: 100%;
+  height: 44px;
+  background: #0092d8;
+}
+#head .logo {
+  display: block;
+  width: 120px;
+  height: 44px;
+  background: url(//img.mdcdn.cn/pc/img/mall/index_sprite.png?t=20150821) no-repeat 0 -242px;
+}
+
+.wrap {
+  width: 1190px;
+  margin: 66px auto 100px;
+}
+
+#main .wrap {
+  overflow: hidden;
+  /* 注册登陆 */
+}
+#main .wrap .main_pic {
+  float: left;
+}
+#main .wrap .main_pic img {
+  max-height: 485px;
+  margin-left: 110px;
+}
+#main .wrap .main_reg {
+  float: left;
+  margin-left: 100px;
+  width: 300px;
+  padding: 29px 38px 38px;
+  border: 1px solid #ccc;
+  /* 图标 */
+  /* 水平线 */
+}
+#main .wrap .main_reg h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+#main .wrap .main_reg i {
+  float: left;
+  display: block;
+  width: 49px;
+  height: 48px;
+}
+#main .wrap .main_reg .reg_icon {
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#main .wrap .main_reg .reg_icon .reg_qq {
+  background: url(//img.mdcdn.cn/pc/img/mall/login.png) no-repeat;
+  background-position: 0 0;
+  margin-right: 20px;
+}
+#main .wrap .main_reg .reg_icon .reg_wec {
+  background: url(//img.mdcdn.cn/pc/img/mall/login.png) no-repeat;
+  background-position: -57px 0;
+}
+#main .wrap .main_reg .reg_input p {
+  margin: 20px 0;
+  font-size: 20px;
+}
+#main .wrap .main_reg .reg_input input {
+  border: 1px solid #c8c8c8;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  width: 298px;
+  height: 38px;
+  line-height: 38px;
+  text-indent: 10px;
+}
+#main .wrap .main_reg .reg_tip {
+  color: red;
+}
+#main .wrap .main_reg .reg_btn {
+  margin: 10px 0;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background: #0092d8;
+}
+#main .wrap .main_reg .reg_btn:hover {
+  background: #0078cf;
+}
+#main .wrap .main_reg .reg_another {
+  margin-top: 20px;
+}
+#main .wrap .main_reg .reg_another span {
+  margin: 0 20px;
+}
+#main .wrap .main_reg .reg_another a:nth-of-type(3) {
+  float: right;
+}
+#main .wrap .main_reg .reg_another a:hover {
+  color: red;
+}
+
+#foot .wrap .foot_br {
+  margin-top: 200px;
+}
+#foot .wrap p {
+  margin-top: 10px;
+  text-align: center;
+  color: #999;
+}
+
+/*# sourceMappingURL=login.css.map */

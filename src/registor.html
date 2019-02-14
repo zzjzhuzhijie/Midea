@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/registor.css">
+</head>
+
+<body>
+    <div id="head">
+        <a href="http://10.31.161.252/Midea/src/index.html" class="logo"></a>
+    </div>
+
+    <div id="main">
+        <div class="wrap">
+            <div class="main_pic">
+                <img src="https://pic.mdcdn.cn/h5/pic/201806/81eecc43e29f.png?x-oss-process=image/format,webp/quality,Q_100&@100Q.png"
+                    alt="">
+            </div>
+            <!-- 注册登陆 -->
+            <div class="main_reg">
+                <h3>使用手机号注册</h3>
+
+                <!-- 表格 -->
+                <form action="../php/reg.php" method="post" id="form">
+                    <div class="reg_input">
+                        <input type="text" placeholder="邮箱" name="email" autocomplete="off">
+                        <label for="email" id="email-error" class="error"></label>
+
+                        <input type="text" placeholder="账号" name="username" class="username" autocomplete="off">
+                        <label for="username" id="username-error" class="error"></label>
+                        <label for="username_1" id="username-error_1" class="error_1"></label>
+
+                        <input type="password" placeholder="密码" name="password" id="password">
+                        <label for="password" id="password-error" class="error"></label>
+                        <label for="password_1" id="password-error_1" class="error_1"></label>
+
+                        <input type="password" placeholder="重复密码" name="password_another">
+                        <label for="password_another" id="password_another-error" class="error"></label>
+                        
+                        <p class="pass_word">密码长度必须在8位以上，含大小写字母、数字、符号至少三种</p>
+                        <div class="reg_botbook">
+                            <input type="checkbox" checked><span class="reg_agree">同意</span><a href="javascript:;"
+                                class="reg_agreement">《美的官方商城用户注册协议》</a>
+                                <b class="check_btn_error"></b>
+                        </div>
+                    </div>
+                    <div class="reg_btn"><input type="submit" value="注册" name="submit"></div>
+                </form>
+                <!-- 注册 -->
+                <div class="reg_another">
+                    <a href="http://10.31.161.252/Midea/src/login.html" class="reg_another_right">已有账号？请登录</a><!--*****************url-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot">
+        <div class="wrap">
+            <div class="foot_br"></div>
+            <p>Copyright © 1968-2018 广东美的网络科技有限公司 粤ICP备17058257号</p>
+        </div>
+    </div>
+    <script src="script/thirdplugins/jquery.js"></script>
+    <script src="script/thirdplugins/jquery.validate.js"></script>
+    <script src="script/js/registor.js"></script>
+</body>
+
+</html>

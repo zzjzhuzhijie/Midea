@@ -1,0 +1,97 @@
+.menu_left{
+    float: $l;
+    width:220px;
+    height: 100%;
+    background-color: #fff;
+    border-right: $border_1;
+    ul{
+        padding-left: 16px;
+        padding-top: 24px;
+        height: 100%;
+        height: 270px;
+        width: 204px;
+        li{
+            list-style: none;
+            height: 100%;
+            width: 204px;
+            height: 40px;
+            margin-bottom: 14px;  
+            &:hover{
+                a{color: red}
+            }
+        }
+    }
+}
+.menu_center{
+        background-color: #fff;
+        float: $l;
+        width: 220px;
+        height: 100%;
+        ul{
+            li{ 
+                a{
+                    display: block;
+                    width: 220px;
+                    height: 80px;
+                    padding:20px 0 20px;
+                    //color: #333;
+                    border-bottom: $border_1;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                        margin-left: 12px;
+                        float: left;
+                    }
+                    .menu_centet_title{
+                        margin-top: 18px;
+                        max-height: 34px;
+                        display: block;
+                        padding: 0 9px;
+                        line-height: 16px;
+                        overflow: hidden;
+                    }
+                    .menu_centet_price{
+                        display: block;
+                        padding: 0 9px;
+                        margin-top: 2px;
+                        overflow: hidden;
+                    }
+                    &:hover{
+                        color: red;
+                    }
+                }
+                
+            }
+        }
+}
+.menu_right{
+    float: $l;
+    width: 220px;
+    ul{
+        
+        background: #fff;
+        
+        li{
+            border-left: $border_1;
+            text-align: center;
+            padding: 28px 50px;
+            border-bottom: $border_1;
+            &:hover{
+                a{color: red;}
+            }
+
+            img{
+                margin-top:9px;
+                display: block;
+                width: 120px;
+                height: 120px;
+            }
+            .menu_right_p1{
+                margin-top:22px;
+            }
+            .menu_right_p2{
+                margin-top:10px;
+            }
+        }
+    }
+}

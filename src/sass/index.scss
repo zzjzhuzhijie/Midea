@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* 自定义的继承。。。 */
+@import 'custom';
+/* 头部 */
+@import 'header';
+body{
+    font-size:12px;
+    color:#333;
+}
+a{
+    color: #333;
+}
+.left{
+    float: $l;
+}
+.right{
+    float: $r;
+}
+#info{
+    height: 41px;
+    background: #fff; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    .wrapper{height: 41px;}
+}
+/* 四个图标 */
+@import 'wrapper-top';
+/* 轮播图加菜单 */
+#bannerall{
+    position:relative;
+    @import 'banner';
+    @import 'menu';
+}
+#bannerall #menu dd{
+    @import 'menu-dd-content';
+}
+
+@import 'groom';/*  上四小图 */
+
+/* 明星单品 */
+@import 'floor_1';
+/* 推荐专区 */
+@import 'recommend';
+/* 会员 */
+@import 'vip-floor';
+/* 楼梯 */
+@import 'louti';
+/* 底部 */
+@import 'footer';

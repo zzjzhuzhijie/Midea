@@ -1,0 +1,98 @@
+@charset "utf-8";
+#floor_tit_1{
+    .floor_tit1_icon{
+        margin: 80px auto 40px;
+        background-image: $banner_l_r_url;
+        background-position: 0 -60px;
+        width: 160px;
+        height: 67px;
+    }
+}
+#floor_1{
+    border-top: $border_1;
+    .floor_top{/* 商品上部分 */
+        border-left:$border_1;
+        overflow: hidden;
+        .floor_topleft{/* 商品上左 */
+            height: 648px;
+            @extend %floor_max_box;
+            padding-bottom: 35px;
+            border-right:$border_1;
+            border-bottom: $border_1;
+            margin-left: -2px;
+        }
+        .floor_topright{/* 商品上右 */
+            overflow: hidden;
+            float: $l;
+            ul{
+                width: 600px;
+                li{
+                    position: relative;
+                    height: 341px;
+                    float: $l;
+                    margin-left:-1px;
+                    border-right:$border_1;
+                    border-bottom:$border_1;
+                    @extend %floor_small_box;  
+                }
+            }
+        }
+    }
+    .floor_bot{/* 商品下部分 */
+        overflow: hidden;
+        .floor_botleft{/* 下左 */
+            float: left;
+            border-left: $border_1;
+           .floor_botleft_top{/* 下左上 */ 
+                width: 600px;
+                height: 340px;
+                position: relative;
+                border-bottom: $border_1;
+                border-right: $border_1;
+                margin-left: -2px;
+                a{
+                   img{
+                    margin: 28px 30px;
+                    }
+                    p{
+                        position: absolute;
+                        left: 35px;
+                        bottom: 90px;
+                    } 
+                    &:hover{
+                        color: red;
+                    }
+                }     
+           }
+           .floor_botleft_bot{
+            @extend %floor_small_box;
+            ul{
+                overflow:hidden;
+                width: 600px;
+                li{
+                    height: 340px;
+                    position: relative;
+                    float: $l;
+                    border-bottom: $border_1;
+                    border-right: $border_1;
+                    margin-left: -1.5px;
+                }
+                
+            }
+            
+           }
+           
+        }
+        .floor_botright{/* 下右 */
+            @extend %floor_max_box;
+            padding-bottom: 45px;
+            width: 600px;
+            height: 636px;
+            float: left;
+            margin-left: -2px;
+            border-right: $border_1;
+            border-bottom: $border_1;
+           }
+    }
+    
+}

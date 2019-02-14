@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import 'login';
+#main .wrap .reg_input{
+    
+    margin-top:20px;
+    p{
+        margin-top:-5px !important;
+        margin-left: 10px !important;
+        display: none;
+        font-size:12px !important;
+        color: red;
+    }
+    span{
+
+    }
+    .pass_word{
+        color: #999;
+        font-size: 12px;
+        display: block !important;
+    }
+    .reg_botbook{
+        overflow: hidden;
+    /* 选择框 */
+    input{
+        float: left;
+        width: 13px;
+        height: 13px;
+        border: 1px solid #999;
+        background: #0092d8;
+        margin-top:0px;
+    }
+            
+        .reg_agree{
+            float:$l;
+        }
+        .reg_agreement{
+            color:#0086e6;
+            float: $l;
+        }
+    }
+}
+.main_reg .reg_another{
+    .reg_another_right{
+        float: right;
+        color:#0086e6;
+    }
+}
+.reg_btn{
+    input{
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        background: #0092d8;
+        color: #fff;
+        border: 0;
+    }
+}
+.reg_input{
+    label{
+        margin-bottom: 10px;
+        display: block;
+        margin-left: 20px;
+    }
+    .error{
+        color: red;
+    }
+}
+.check_btn_error{
+    color: red;
+    display: block;
+}
+

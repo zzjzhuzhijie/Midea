@@ -1,0 +1,39 @@
+.active_lou{
+    background: #fff;
+    color: #000;
+}
+#fixed_box{
+    position: fixed;
+    right: 40px;
+    opacity: 0;
+    //right:-122px;
+    bottom: 200px;
+    display: none;
+    ul{
+        border: 1px solid #ccc;
+        background: #000;
+        color: #fff;
+
+        li{
+            font-size: 15px;
+            padding: 5px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            
+        }
+    }
+}
+.hide{
+    color: #fff;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    text-align: center;
+    line-height: 35px;
+    font-size: 30px;
+    position: fixed;
+    right: 0;
+    bottom: 282px;
+    cursor: pointer;
+}

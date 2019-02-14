@@ -1,0 +1,64 @@
+#banner{
+    position: relative;
+    overflow: hidden;
+    height: 480px;
+    .banner_ul{
+        position: absolute;
+        li{
+            float: left;
+            //display: none;
+        }
+    }
+    
+    ol{
+        padding: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -25px;
+        .active{
+            background-color:#fff;
+        }
+        li{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: $border_1;
+            background-color: #ccc;
+            float: $l;
+            margin:5px;
+            &:hover{
+                background-color:#fff;
+                cursor: pointer;
+            }
+        }
+    }
+    .banner_left{
+        background-image: $banner_l_r_url;
+        background-position: -170px -59px;
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left:220px;
+        top:210px;
+        display: none;
+        &:hover{
+            background-position: -171px -124px;
+        }
+    }
+    .banner_right{
+        background-image: $banner_l_r_url;
+        background-position: -233px -59px;
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right:0;
+        top:210px;
+        display: none;
+        &:hover{
+            background-position:-234px -124px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+#recommend{
+    h1{
+        height:190px;
+        font-size:40px;
+        text-align: center;
+        font-weight: 300;
+        color: #3a3a3a;
+        line-height: 190px;
+        position: relative;
+        a{
+            display: block;
+            position: absolute;
+            font-size: 12px;
+            color: #999;
+            left: 50%;
+            margin-left: -42px;
+            top:140px;
+            font-weight: normal;
+            line-height:0;
+        }
+    }
+    .recommend_shop{
+        ul{
+            border: $border_1;
+            border-bottom: 0;
+            overflow: hidden;
+            li{
+                @extend %floor_small_box;
+                position: relative;
+                height: 341px;
+                float: $l;
+                margin-left: -2px;
+                border-left: $border_1;
+                border-bottom: $border_1;
+                h5{
+                    max-height: 40px;
+                    overflow: hidden;
+                    padding: 0 15px;
+                    margin-top: -5px;
+                    bottom: 52px;
+                }
+                p{
+                    position: absolute;
+                    left: 50%;
+                    bottom: 24px;
+                    transform:translateX(-50%);
+                }
+            }
+        }
+        
+        
+    }
+}

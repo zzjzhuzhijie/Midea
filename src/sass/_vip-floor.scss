@@ -1,0 +1,59 @@
+#floor_tit_2{
+    .floor_tit2_icon{
+        width: 160px;
+        height: 38px;
+        margin:80px auto 20px;
+        background-image: $banner_l_r_url;
+        background-position: 0 -140px;
+        overflow: hidden;  
+    }
+    a{
+        display: block;
+        text-align: center;
+        color: #999;
+        margin-bottom: 40px;
+    }
+}
+#vip_wrap{
+    ul{
+        overflow: hidden;
+        border-left:$border_1;
+        border-bottom: $border_1;
+        border-top: $border_1;
+    }
+    .vip_wrap_li1{
+        margin-left:-1px;
+    }
+    li{
+        position: relative;
+        float: $l;
+        width: 299px;
+        height: 420px;
+        border-right: $border_1;
+        a{
+            //color: #333;
+            img{
+                display: block;
+                width: 200px;
+                height: 300px;
+                margin: 30px auto 10px;
+            }
+        }
+        .vip_btn{
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform:translateX(-50%);
+            display: block;
+            width: 118px;
+            height: 38px;
+            line-height: 38px;
+            border: 1px solid #999;
+            text-align: center;
+            margin: 0 auto;
+            &:hover{
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}

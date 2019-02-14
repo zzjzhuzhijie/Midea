@@ -1,0 +1,23 @@
+#groom{
+    border-left: $border_1;
+    border-bottom: $border_1;
+    .groom_1{
+        margin-left: -1px;
+    }
+    ul{
+        overflow: hidden;
+        li{
+            float: left;
+            border-right: $border_1;
+            a{
+                img{
+                    @extend %box-movetop;
+                    display: block;
+                    width: 200px;
+                    height: 180px;
+                    margin: 15px 49.5px 5px;
+                }
+            }
+        }
+    }
+}

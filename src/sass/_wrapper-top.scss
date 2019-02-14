@@ -1,0 +1,45 @@
+.wrapper{
+    width:1200px;
+    background: #fff;
+    margin: 0 auto; 
+    .info_wrap1{
+        width: 160px;
+        height: 40px;
+        margin-left:-12px;
+        line-height: 40px;
+        i{
+            @extend %info_icon;
+            background-position: 0 0;
+        }
+    } 
+    .info_wrap2{
+        width: 145px;
+        height: 40px;
+        margin-left:210px;
+        line-height: 40px;
+        i{
+            @extend %info_icon;
+            background-position: 0 -40px;
+        }
+    } 
+    .info_wrap3{
+        width: 155px;
+        height: 40px;
+        margin-left:190px;
+        line-height: 40px;
+        i{
+            @extend %info_icon;
+            background-position: -40px 0;
+        }
+    } 
+    .info_wrap4{
+        width: 132px;
+        height: 40px;
+        margin-left: 220px;
+        line-height: 40px;
+        i{
+            @extend %info_icon;
+            background-position: -40px -40px;
+        }
+    } 
+}

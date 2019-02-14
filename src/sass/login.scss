@@ -1,0 +1,135 @@
+@charset "utf-8";
+$border_1:1px solid #ccc;
+$l:left;
+%br{
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+}
+body{
+    color: #666;
+    font-size: 12px;
+}
+a{
+    color:#999;
+}
+#head{
+    width: 100%;
+    height: 44px;
+    background: #0092d8;
+    .logo{
+        display: block;
+        width: 120px;
+        height: 44px;
+        background: url(//img.mdcdn.cn/pc/img/mall/index_sprite.png?t=20150821) no-repeat 0 -242px;
+    }
+}
+.wrap{
+    width: 1190px;
+    margin: 66px auto 100px;
+}
+#main .wrap{
+    overflow: hidden;
+    .main_pic{
+        float: $l;
+        img{
+            max-height: 485px;
+            margin-left: 110px;
+        }
+    }
+    /* 注册登陆 */
+    .main_reg{
+        float: $l;
+        margin-left: 100px;
+        width: 300px;
+        padding: 29px 38px 38px;
+        border: $border_1;
+        h3{
+            font-size: 20px;
+            font-weight: normal;
+        }
+        i{
+            float: $l;
+            display: block;
+            width: 49px;
+            height: 48px;
+        }
+        /* 图标 */
+        .reg_icon{
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .reg_qq{
+                background: url(//img.mdcdn.cn/pc/img/mall/login.png) no-repeat;
+                background-position: 0 0;
+                margin-right: 20px;
+            }
+            .reg_wec{
+                background: url(//img.mdcdn.cn/pc/img/mall/login.png) no-repeat;
+                background-position: -57px 0;
+            }
+        }
+        /* 水平线 */
+        .reg_br{
+           @extend %br;
+        }
+        .reg_input{
+           p{
+               margin:20px 0;
+               font-size: 20px;
+           } 
+           input{
+               border: 1px solid #c8c8c8;
+               border-radius: 2px;
+               margin-bottom: 15px;
+               width: 298px;
+               height:38px;
+               line-height: 38px;
+               text-indent: 10px;
+           }
+        }
+    .reg_tip{color: red}
+        .reg_btn{
+            margin: 10px 0;
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background: #0092d8;
+            &:hover{
+                background: #0078cf;
+            }
+
+        }
+        .reg_another{
+            margin-top:20px;
+            span{
+                margin: 0 20px;
+            }
+            a:nth-of-type(3){
+                float: right;
+            }
+            a{
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+        
+        
+
+    }
+    
+}
+#foot .wrap{
+    .foot_br{
+        @extend %br;
+        margin-top: 200px;   
+    }
+    p{
+        margin-top:10px;
+        text-align: center;
+        color: #999;
+    }
+}
